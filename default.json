@@ -1,0 +1,3 @@
+{
+    "mongoURI" : "mongodb+srv://monik123:monik123@cluster0-gt9jc.mongodb.net/test?retryWrites=true&w=majority",
+}
