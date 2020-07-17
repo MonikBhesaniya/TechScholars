@@ -28,13 +28,17 @@ const proileSchema = new mongoose.Schema({
     githunusername: {
         type: String
     },
-    experirnce: [
+    experience: [
         {
             title: {
                 type: String,
                 required: true
             },
             company: {
+                type: String,
+                required: true
+            },
+            location: {
                 type: String,
                 required: true
             },
@@ -49,7 +53,7 @@ const proileSchema = new mongoose.Schema({
                 type: Boolean,
                 default: false
             },
-            discription: {
+            description: {
                 type: String,
             }
         }
@@ -64,7 +68,7 @@ const proileSchema = new mongoose.Schema({
                 type: String,
                 required: true
             },
-            fieldostudy: {
+            fieldofstudy: {
                 type: String,
                 required: true
             },
@@ -79,7 +83,7 @@ const proileSchema = new mongoose.Schema({
                 type: Boolean,
                 default: false
             },
-            discription: {
+            description: {
                 type: String,
             }
         }
