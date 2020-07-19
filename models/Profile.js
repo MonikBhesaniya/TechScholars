@@ -111,4 +111,4 @@ const proileSchema = new mongoose.Schema({
     }   
 });
 
-module.exports = Profile = mongoose.model('proile', proileSchema);
+module.exports = Profile = mongoose.model('profile', proileSchema);
