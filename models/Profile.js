@@ -25,7 +25,7 @@ const proileSchema = new mongoose.Schema({
     bio: {
         type: String
     },
-    githunusername: {
+    githubusername: {
         type: String
     },
     experience: [

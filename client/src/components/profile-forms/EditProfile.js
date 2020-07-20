@@ -33,13 +33,13 @@ const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentP
             skills: loading || !profile.skills ? '' : profile.skills,
             githubusername: loading || !profile.githubusername ? '' : profile.githubusername,
             bio: loading || !profile.bio ? '' : profile.bio,
-            twitter: loading || !profile.social.twitter ? '' : profile.social.twitter,
-            facebook: loading || !profile.social.facebook ? '' : profile.social.facebook,
-            instagram: loading || !profile.social.instagram ? '' : profile.social.instagram,
-            youtube: loading || !profile.social.youtube ? '' : profile.social.youtube,
-            linkedin: loading || !profile.social.linkedin ? '' : profile.social.linkedin,
+            twitter: loading || !profile.social ? '' : profile.social.twitter,
+            facebook: loading || !profile.social ? '' : profile.social.facebook,
+            instagram: loading || !profile.social ? '' : profile.social.instagram,
+            youtube: loading || !profile.social ? '' : profile.social.youtube,
+            linkedin: loading || !profile.social ? '' : profile.social.linkedin,
         });
-    }, [loading]);
+    }, [loading, getCurrentProfile]);
 
     const {
         company,
@@ -170,8 +170,8 @@ const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentP
                 <Link className="btn btn-light my-1" to="/dashboard">Go Back</Link>
             </form>
         </Fragment>
-    )
-}
+    );
+};
 
 EditProfile.propTypes = {
     createProfile: PropTypes.func.isRequired,
