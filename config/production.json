@@ -1,0 +1,6 @@
+{
+    "mongoURI" : "mongodb+srv://monik123:monik123@cluster0.kldex.mongodb.net/test",
+    "jwtsecret": "mysecrettoken",
+    "githubclientid": "aeef51a83b936b1c12af",
+    "githubsecret": "4e5cf6362ed62d3e5461277699b77b254465d297"
+}

@@ -165,9 +165,8 @@ const EditProfile = ({ profile: { profile, loading }, createProfile, getCurrentP
                     <input type="text" placeholder="Instagram URL" name="instagram" value={instagram} onChange={(e) => onChange(e)} />
                     </div>
                 </Fragment>}
-
                 <input type="submit" className="btn btn-primary my-1" />
-                <Link className="btn btn-light my-1" to="/dashboard">Go Back</Link>
+                <Link className="btn btn-light my-1" to="/dashboard">To Dashboard</Link>
             </form>
         </Fragment>
     );

@@ -145,10 +145,10 @@ router.put('/unlike/:id', auth, async (req,res) => {
     }
 });
 
-//@route   PUT api/posts/comment/:id
+//@route   POST api/posts/comment/:id
 //@desc    Comment on a post
 //@access  private 
-router.put("/comment/:id",[ auth, [
+router.post("/comment/:id",[ auth, [
     check('text','text is required').not().isEmpty(),
 ]], async (req,res) => { 
     const errors = validationResult(req);
